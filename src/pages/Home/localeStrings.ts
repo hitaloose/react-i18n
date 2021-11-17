@@ -1,6 +1,6 @@
-import { Texts } from "../../types/Text";
+import { Translations } from "../../types/Language";
 
-export const localeStrings: Record<string, Texts> = {
+export const localeStrings: { [key: string]: Translations } = {
   WELCOME: {
     pt: "Bem vindo",
     en: "Welcome",

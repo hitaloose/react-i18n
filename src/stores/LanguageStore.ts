@@ -1,4 +1,4 @@
 import { Store } from "pullstate";
-import { Text } from "../types/Text";
+import { Languages } from "../types/Language";
 
-export const LanguageStore = new Store<Text>("pt");
+export const LanguageStore = new Store<Languages>("pt");
