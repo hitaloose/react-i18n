@@ -1,10 +1,10 @@
 import { LanguageStore } from "../stores/LanguageStore";
-import { Translations } from "../types/Language";
+import { Languages, Translations } from "../types/Language";
 
 export const useLanguage = (localeStrings: Record<string, Translations>) => {
   const currentLanguage = LanguageStore.useState((state) => state);
 
-  const changeLanguage = (language: Text) => {
+  const changeLanguage = (language: Languages) => {
     LanguageStore.update(() => language);
   };
 
