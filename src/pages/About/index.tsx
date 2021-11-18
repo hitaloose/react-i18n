@@ -1,8 +1,10 @@
 import { useLanguage } from "../../hooks/useLanguage";
 import { localeStrings } from "./localeStrings";
+import { commonLocaleStrings } from "../../utils/commonLocaleStrings";
 
 export const About = () => {
   const { t } = useLanguage(localeStrings);
+  const { t: commonT } = useLanguage(commonLocaleStrings);
 
   return (
     <div>
@@ -10,8 +12,7 @@ export const About = () => {
 
       <p>{t("CONTACT")}</p>
 
-      <p>{t("ERROR", { code: "500" })}</p>
-      <p>{t("ERROR", { code: "400" })}</p>
+      <p>{commonT("ERROR")}</p>
     </div>
   );
 };

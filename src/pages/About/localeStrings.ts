@@ -1,6 +1,6 @@
 import { Translations } from "../../types/Language";
 
-export type Keys = "TITLE" | "CONTACT" | "ERROR";
+export type Keys = "TITLE" | "CONTACT";
 
 export const localeStrings: Record<Keys, Translations> = {
   TITLE: {
@@ -10,9 +10,5 @@ export const localeStrings: Record<Keys, Translations> = {
   CONTACT: {
     en: "contact",
     pt: "contato",
-  },
-  ERROR: {
-    en: "Error code {code}",
-    pt: "Código de erro {code}",
   },
 };
