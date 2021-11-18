@@ -1,6 +1,6 @@
 import { Translations } from "../../types/Language";
 
-type Keys = "WELCOME" | "P" | "GO_TO_ABOUT";
+type Keys = "WELCOME" | "P" | "GO_TO_ABOUT" | "NOT_FOUND";
 
 export const localeStrings: Record<Keys, Translations> = {
   WELCOME: {
@@ -14,5 +14,9 @@ export const localeStrings: Record<Keys, Translations> = {
   GO_TO_ABOUT: {
     pt: "Ir para sobre",
     en: "Go to about",
+  },
+  NOT_FOUND: {
+    en: "{model} not found",
+    pt: "{model} não encontrado",
   },
 };

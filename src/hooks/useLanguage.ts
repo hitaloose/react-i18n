@@ -12,7 +12,7 @@ export const useLanguage = <T>(
 
   const t = (
     key: keyof typeof localeStrings,
-    replacer: Record<string, string> = {}
+    replacer: Record<string, string | Translations> = {}
   ) => {
     const phrase = localeStrings[key][currentLanguage];
 
@@ -20,10 +20,13 @@ export const useLanguage = <T>(
 
     const completePhase = keys.reduce((prev, key) => {
       const value = replacer[key];
-
       const reg = new RegExp(`{${key}}`, "g");
 
-      return prev.replace(reg, value);
+      if (typeof value === "string") {
+        return prev.replace(reg, value);
+      }
+
+      return prev.replace(reg, value[currentLanguage]);
     }, phrase);
 
     return completePhase;

@@ -19,6 +19,10 @@ export const Home = () => {
       <h1>{t("WELCOME")}</h1>
 
       <p>{t("P")}</p>
+      <p>{t("NOT_FOUND", { model: "Image type" })}</p>
+      <p>
+        {t("NOT_FOUND", { model: { en: "Image type", pt: "Tipo de imagem" } })}
+      </p>
 
       <button onClick={() => navigate("/about")}>{t("GO_TO_ABOUT")}</button>
     </div>
