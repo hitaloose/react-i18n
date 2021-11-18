@@ -1,5 +1,3 @@
-import { languages } from "../utils/languages";
-
-export type Languages = typeof languages[number];
+export type Languages = "pt" | "en";
 
 export type Translations = Record<Languages, string>;
