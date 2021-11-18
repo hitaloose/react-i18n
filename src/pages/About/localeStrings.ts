@@ -1,6 +1,6 @@
 import { Translations } from "../../types/Language";
 
-export type Keys = "TITLE" | "CONTACT";
+type Keys = "TITLE" | "CONTACT";
 
 export const localeStrings: Record<Keys, Translations> = {
   TITLE: {
