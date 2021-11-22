@@ -2,7 +2,7 @@ import { Translations } from "../../types/Language";
 
 type Keys = "TITLE" | "CONTACT";
 
-export const localeStrings: Record<Keys, Translations> = {
+export const strings: Record<Keys, Translations> = {
   TITLE: {
     en: "About",
     pt: "Sobre",

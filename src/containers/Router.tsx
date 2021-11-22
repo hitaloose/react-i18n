@@ -1,15 +1,15 @@
-import { BrowserRouter, Route, Routes as RRDRoutes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { About } from "../pages/About";
 import { Home } from "../pages/Home";
 
-export const Routes = () => {
+export const Router = () => {
   return (
     <BrowserRouter>
-      <RRDRoutes>
+      <Routes>
         <Route path="/" element={<Home />} />
 
         <Route path="/about" element={<About />} />
-      </RRDRoutes>
+      </Routes>
     </BrowserRouter>
   );
 };

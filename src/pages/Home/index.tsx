@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { useLanguage } from "../../hooks/useLanguage";
-import { localeStrings } from "./localeStrings";
+import { useI18n } from "../../hooks/useI18n";
+import { strings } from "./strings";
 
 export const Home = () => {
-  const { t, changeLanguage, currentLanguage } = useLanguage(localeStrings);
+  const { t, changeLanguage, currentLanguage } = useI18n(strings);
   const navigate = useNavigate();
 
   return (

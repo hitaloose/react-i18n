@@ -1,10 +1,10 @@
-import { useLanguage } from "../../hooks/useLanguage";
-import { localeStrings } from "./localeStrings";
-import { commonLocaleStrings } from "../../utils/commonLocaleStrings";
+import { useI18n } from "../../hooks/useI18n";
+import { strings } from "./strings";
+import { commonStrings } from "../../utils/commonStrings";
 
 export const About = () => {
-  const { t } = useLanguage(localeStrings);
-  const { t: commonT } = useLanguage(commonLocaleStrings);
+  const { t } = useI18n(strings);
+  const { t: commonT } = useI18n(commonStrings);
 
   return (
     <div>

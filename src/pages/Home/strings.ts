@@ -2,7 +2,7 @@ import { Translations } from "../../types/Language";
 
 type Keys = "WELCOME" | "P" | "GO_TO_ABOUT" | "NOT_FOUND";
 
-export const localeStrings: Record<Keys, Translations> = {
+export const strings: Record<Keys, Translations> = {
   WELCOME: {
     pt: "Bem vindo",
     en: "Welcome",

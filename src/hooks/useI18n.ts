@@ -1,9 +1,7 @@
 import { LanguageStore } from "../stores/LanguageStore";
 import { Languages, Translations } from "../types/Language";
 
-export const useLanguage = <T>(
-  localeStrings: Record<keyof T, Translations>
-) => {
+export const useI18n = <T>(localeStrings: Record<keyof T, Translations>) => {
   const currentLanguage = LanguageStore.useState((state) => state);
 
   const changeLanguage = (language: Languages) => {
